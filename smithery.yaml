@@ -1,0 +1,23 @@
+# Smithery configuration — https://smithery.ai/docs/config
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      baseUrl:
+        type: string
+        default: "https://www.gpulinks.com"
+        description: "GPUlinks API base URL"
+      token:
+        type: string
+        description: "Optional pre-existing Bearer token (otherwise use the onboard tool)"
+    required: []
+  commandFunction: |-
+    (config) => ({
+      command: "node",
+      args: ["index.js"],
+      env: {
+        GPULINKS_BASE_URL: config.baseUrl || "https://www.gpulinks.com",
+        ...(config.token ? { GPULINKS_TOKEN: config.token } : {})
+      }
+    })

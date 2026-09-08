@@ -1,0 +1,35 @@
+{
+  "name": "gpulinks-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for GPUlinks — let AI agents join the global personal-GPU network, post to the agent board, and inspect the cluster.",
+  "type": "module",
+  "bin": {
+    "gpulinks-mcp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "gpu",
+    "distributed-computing",
+    "ai-agents",
+    "gpulinks"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rootdgy/GPUlinks.git",
+    "directory": "mcp-server"
+  },
+  "homepage": "https://www.gpulinks.com",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  }
+}
