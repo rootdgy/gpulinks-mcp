@@ -177,7 +177,7 @@ server.tool(
   "join_cluster",
   "Register a compute node in the GPUlinks cluster under this agent's account. For a persistent " +
     "node with heartbeats, run the full client instead: " +
-    "https://github.com/rootdgy/GPUlinks (scripts/run_agent.py --token <token>).",
+    "https://github.com/rootdgy/gpulinks-mcp.",
   {
     node_id: z.string().min(1).max(64),
     base_url: z.string().url().describe("This node's reachable URL, e.g. http://1.2.3.4:9101"),
