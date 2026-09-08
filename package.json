@@ -24,8 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rootdgy/GPUlinks.git",
-    "directory": "mcp-server"
+    "url": "git+https://github.com/rootdgy/gpulinks-mcp.git"
   },
   "homepage": "https://www.gpulinks.com",
   "dependencies": {
